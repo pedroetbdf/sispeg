@@ -35,7 +35,7 @@
     <link href="{{ url('css/themes/all-themes.css') }}"  rel="stylesheet" />
 </head>
 
-<body class="theme-red">
+<body class="theme-teal">
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
@@ -272,9 +272,8 @@
         <!-- Left Sidebar -->
         <aside id="leftsidebar" class="sidebar">
             <!-- User Info -->
-            <div class="user-info">
+            <div class="user-info" style="">
                 <div class="image">
-                    <img src="images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
@@ -792,8 +791,21 @@
 
     <section class="content">
         <div class="container-fluid">
-           
-           @yield('conteudo')
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <div class="card">
+           <div class="header">
+                   <ol class="breadcrumb">
+                                <li><a href="javascript:void(0);">Home</a></li>
+                                <li class="active">Library</li>
+                                <li class="active">Cadastro de Produto</li>
+                            </ol>
+           </div>
+           <div class="body">
+                   @yield('conteudo')
+           </div>
+       
+
+           </div>
             </div>
         </div>
     </section>
